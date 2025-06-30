@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insta Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h2 class="logo">INSTA CLONE</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="create">
+        <label class="btn btn-primary">Create Post</label>
+      </div>
+    </div>
+  </nav>
+<br>
+      <div class="middle">
+        <div class="stories">
+          <div class="story">
+            <div class="profile-pic"><img src="https://randomuser.me/api/portraits/women/32.jpg" /></div>
+            <p class="name">Kiran</p>
+          </div>
+          <div class="story">
+            <div class="profile-pic"><img src="https://randomuser.me/api/portraits/women/56.jpg" /></div>
+            <p class="name">Emma</p>
+          </div>
+          <div class="story">
+            <div class="profile-pic"><img src="https://randomuser.me/api/portraits/men/42.jpg" /></div>
+            <p class="name">James</p>
+          </div>
+        </div>
+
+  <main>
+    <div class="container">
+      <div class="right">
+      </div>
+
+        <form class="create-post" id="postForm">
+          <div class="profile-pic">
+            <img src="https://randomuser.me/api/portraits/women/29.jpg" />
+          </div>
+          <input type="text" placeholder="What's on your mind?" id="postInput" />
+          <label for="imageInput" class="image-upload-btn">
+            <span>📷</span>
+          </label>
+          <input type="file" id="imageInput" accept="image/*" style="display: none;" />
+          <div id="imagePreview" class="image-preview"></div>
+          <input type="submit" value="Post" class="btn btn-primary" />
+        </form>
+
+        <div class="feeds" id="feedContainer">
+          <!-- JS-generated posts go here -->
+        </div>
+      </div>
+<div class="container">
+  <h2></h2>
+
+  <!-- Post Feed -->
+  <section class="post-feed">
+    <!-- Post 1 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="User" />
+        <span>romen_29</span>
+      </div>
+      <img class="post-img" src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=800&q=80" alt="Post Image" />
+     <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="User" />
+        <span>smith_883</span>
+      </div>
+      <img class="post-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Post Image" />
+     <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="User" />
+        <span>br_lee_06</span>
+      </div>
+      <img class="post-img" src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80" alt="Post Image" />
+      <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+    </div>
+
+    <!-- Post 4 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="User" />
+        <span>sara__06</span>
+      </div>
+      <img class="post-img" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Post Image" />
+      <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="User" />
+        <span>rocky__000</span>
+      </div>
+      <img class="post-img" src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Post Image" />
+      <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+    </div>
+  </section>
+</div>
+
+      <div class="right">
+        <a class="profile">
+          <div class="profile-pic">
+            <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="User"/>
+          </div>
+          <div class="handle">
+            <h4>Helen</h4>
+            <p class="text-muted">@helen</p>
+          </div>
+        </a>
+  <aside>
+          <ul>
+            <li>🏠 Home</li>
+            <li style="display: flex; justify-content: space-between; align-items: center;">
+              💬 Messages
+              <span class="badge">+1</span>
+            </li>
+            <li>🌍 Explore</li>
+            <li>🔔 Notifications</li>
+          </ul>
+        </aside>
+
+        <div class="messages">
+          <div class="heading">
+            <h4>Messages</h4>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search messages" />
+          </div>
+          <div class="message">
+            <div class="profile-pic">
+              <img src="https://randomuser.me/api/portraits/women/63.jpg" />
+              <div class="active"></div>
+            </div>
+            <div class="message-body">
+              <h5>Olivia</h5>
+              <p class="text-muted">Hey! How’s it going?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
